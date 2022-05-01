@@ -27,27 +27,45 @@ a
     font-size: 1.6rem;
 }
 
+/* Header */
+
 .meHeader
 {
     width: 100%;
-    height: 80px;
-    padding: 20px;
-}
-
-.me
-{
-    width: 100%;
     display: grid;
-    grid-template-rows: 180px 80px 100px;
+    grid-template-rows: 80px 200px 80px;
     grid-template-columns: 1;
     justify-items: center;
     align-items: center;
+    padding: 20px;
+}
+
+.portaTitle
+{
+    font-size: 2.6rem;
+    font-weight: bold;
+    justify-self: flex-start;
+    align-self: flex-start;
+    grid-row: 1 / 2;
+}
+
+/* Seccion Profile */
+
+.portaProfile
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 2 / 3;
 }
 
 .myProfile
 {
-    width: 140px;
-    height: 140px;
+    width: 138px;
+    height: 138px;
     background-image: url(/assets/images/MyPhoto.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -64,18 +82,28 @@ a
     text-align: center;
 }
 
-.myNetworks
-{
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
+/* Seccion Networks */
 
+.portaSocialNet
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.networkInsta
+.myNetworks
 {
-    width: 150px;
-    height: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.networkSocial
+{
+    width: 138px;
+    height: 28px;
     display: flex;    
     justify-content: space-between;
     padding-left: 15px;
@@ -84,20 +112,19 @@ a
     border-radius: 30px;    
     font-size: 1.4rem;
     color: var(--white);
-    background-color: rgb(29, 161, 242);
+    
+    text-decoration: none;
 }
 
 .networkInsta_logo
 {
-    width: 58px;
-    height: 28px;
-  
+    width: 48px;
+    height: 26px;  
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     display: block;
-    border-radius: 0px 30px 30px 0px;   
-    
+    border-radius: 0px 30px 30px 0px;  
 }
 
 .insta_logo
@@ -118,7 +145,17 @@ a
     background-color: white;
 }
 
+.color-insta
+{
+    background-color: rgb(221, 42, 123);
+}
+
 .color-gitHub
 {
     background-color: #171717;
+}
+
+.color-twitter
+{
+    background-color: rgb(8,160, 233);
 }
