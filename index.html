@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="styles/styleHeader.css">
         <link rel="stylesheet" href="styles/styleMain.css">
         <link rel="stylesheet" href="styles/styleFooter.css">
+        <link rel="stylesheet" href="styles/styleFloatMenu.css">
         <!-- <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 375px)"> -->
         
 
@@ -33,13 +34,26 @@
 
         <h2 class="meHeader-myName">Eduardo Rireyes</h2>
         
-        <h3 class="meHeader-specialty">Futuro Full-Stack Developer especializado en Frontend</h3>
+        <h3 class="meHeader-specialty">Futuro Full-Stack Developer especializado en Frontend</h3>       
 
-    </header>
+    </header>  
+        
+    <nav id="ID_nav-menu" class="nav-menu">
+        <section  class="section-menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-item-a" onclick="showMenu()" href="#ID_portafolio">Portafolio</a></li>
+                <li class="menu-item"><a class="menu-item-a" onclick="showMenu()" href="#ID_habilidades">Habilidades</a></li>
+                <li class="menu-item"><a class="menu-item-a" onclick="showMenu()" href="#ID_contacto">Contacto</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <button onclick="showMenu()" class="btn-menu"><span class="icon-menu"></span></button>
+    <script defer src="index.js"></script>
 
     <main class="meMain">
 
-        <section class="meMain-sectionPortafolio">
+        <section id="ID_portafolio" class="meMain-sectionPortafolio">
 
             <h3 class="meMain-titleProyectos">Portafolio</h3>
 
@@ -66,7 +80,7 @@
         </section>
 
 
-        <section class="meMain-sectionSkills">
+        <section id="ID_habilidades" class="meMain-sectionSkills">
 
             <h3 class="meMain-titleProyectos">Habilidades</h3>
 
@@ -86,7 +100,7 @@
         </section>
 
 
-        <section class="meMain-portaSocialNet">  
+        <section id="ID_contacto" class="meMain-portaSocialNet">  
             
             <h3 class="meMain-titleProyectos">Contacto</h3>
 
@@ -100,10 +114,6 @@
         </section>
     </main>
 
-
-    
-        <!-- 
-        </section>        -->
 
     <footer class="meFooter">
         <p class="piePagina">Rireyes Technologies 2022</p>
