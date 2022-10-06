@@ -177,6 +177,11 @@
     background-image: url(/assets/iconsSkills/npm.svg);
 }
 
+.tableSkills-typeScript
+{
+    background-image: url(/assets/iconsSkills/typeScript.png);
+}
+
 .tableSkills-arduino
 {
     background-image: url(/assets/iconsSkills/arduino.png);
